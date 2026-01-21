@@ -1,29 +1,28 @@
-# 🎓 AI-Powered Student Support Chatbot
+# 🎓 AI Chatbot for Schools & Training Institutes
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-red?style=for-the-badge&logo=flask)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql)
 ![Dialogflow](https://img.shields.io/badge/Dialogflow-NLP-green?style=for-the-badge&logo=google-cloud)
 
-> **An intelligent conversational agent designed to automate student inquiries, course registrations, and schedule management using Natural Language Processing (NLP).**
+> **A smart automated receptionist designed for Schools, Colleges, and Training Centers to handle admissions, fee inquiries, and student schedules 24/7 without human intervention.**
 
 ---
 
 ## 🚀 Project Overview
-This project solves the problem of manual student handling by providing a **24/7 Virtual Assistant**. The chatbot understands natural human language and performs real-time database operations to assist students.
+This project is an **AI-based Business Solution** for educational institutes. It replaces the need for a manual receptionist by automatically answering student queries and handling the registration process.
 
-**Key Features:**
-* 🤖 **NLP Understanding:** Uses Google Dialogflow to understand user intents (Greetings, Inquiries, etc.).
-* 📂 **Smart Course Info:** Fetches course fees, duration, and details dynamically from the database.
-* 📝 **Auto-Registration:** Students can register for courses directly through chat (Data is saved to MySQL).
-* 📅 **Schedule Tracking:** Provides class timings and days instantly.
-* 🧠 **Smart Small Talk:** Hybrid approach using Dialogflow & Regex for human-like small talk.
-* 🛡️ **Error Handling:** Intelligent retry logic if a user inputs incorrect data.
+**Key Features for Institutes:**
+* 🏢 **Automated Front Desk:** Handles hundreds of student inquiries simultaneously.
+* 📝 **Smart Admissions:** Collects student details (Name, Phone, Email) and saves them to the institute's database.
+* 💰 **Fee & Course Info:** Instantly provides details about course fees, duration, and curriculum.
+* 📅 **Schedule Management:** Updates students about class timings and days automatically.
+* 🧠 **Hybrid NLP Engine:** Uses Google Dialogflow & Regex to ensure accurate responses for local Pakistani students.
 
 ---
 
 ## 📸 Screenshots
-*(Upload screenshots of your chatbot here)*
+*(Upload screenshots here)*
 
 | Chat Interface | Registration Flow | Database View |
 |:---:|:---:|:---:|
@@ -35,8 +34,7 @@ This project solves the problem of manual student handling by providing a **24/7
 * **Frontend:** Dialogflow ES (Natural Language Processing)
 * **Backend:** Python (Flask Framework)
 * **Database:** MySQL (XAMPP Server)
-* **Tunneling:** Ngrok (For exposing localhost to the web)
-* **Tools:** VS Code, Postman, PHPMyAdmin
+* **Tunneling:** Ngrok (For Live Testing)
 
 ---
 
@@ -46,3 +44,9 @@ This project solves the problem of manual student handling by providing a **24/7
 ```bash
 git clone [https://github.com/ArslanAkhtar/NLP-Chatbot.git](https://github.com/ArslanAkhtar/NLP-Chatbot.git)
 cd NLP-Chatbot
+
+---
+
+### 2. Install Dependencies
+```bash
+pip install flask mysql-connector-python
