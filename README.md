@@ -44,9 +44,3 @@ This project is an **AI-based Business Solution** for educational institutes. It
 ```bash
 git clone [https://github.com/ArslanAkhtar/NLP-Chatbot.git](https://github.com/ArslanAkhtar/NLP-Chatbot.git)
 cd NLP-Chatbot
-
----
-
-### 2. Install Dependencies
-```bash
-pip install flask mysql-connector-python
