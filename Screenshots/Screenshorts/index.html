@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Training Company Chatbot</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .chat-container {
+            width: 400px;
+            background: white;
+            margin: 40px auto;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        #chatBox {
+            height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            background: #fafafa;
+        }
+
+        .user {
+            text-align: right;
+            margin-bottom: 8px;
+            color: blue;
+        }
+
+        .bot {
+            text-align: left;
+            margin-bottom: 8px;
+            color: green;
+        }
+
+        input {
+            width: 75%;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="chat-container">
+    <h2>Training Company Chatbot</h2>
+
+    <div id="chatBox"></div>
+
+    <input type="text" id="userInput" placeholder="Type message...">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+
+<script>
+    function sendMessage() {
+        let msg = document.getElementById("userInput").value;
+        if (msg.trim() === "") return;
+
+        document.getElementById("chatBox").innerHTML +=
+            `<div class='user'><b>You:</b> ${msg}</div>`;
+
+        fetch("/send_message", {
+            method: "POST",
+            body: new URLSearchParams({ user_message: msg }),
+            headers: { "Content-Type": "application/x-www-form-urlencoded" }
+        })
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("chatBox").innerHTML +=
+                `<div class='bot'><b>Bot:</b> ${data.response}</div>`;
+        });
+
+        document.getElementById("userInput").value = "";
+    }
+</script>
+
+</body>
+</html>
