@@ -131,6 +131,8 @@ ngrok http 5000
 2. Paste into Dialogflow Fulfillment Webhook
 3. Enable webhook for required intents
 
+---
+
 ### 🎓 Project Details
 
 Project Type: Final Year Project (FYP)
@@ -139,14 +141,21 @@ Level: BSSE
 
 University: Virtual University of Pakistan
 
+---
+
 ### 👨‍💻 Author
 
 Muhammad Arslan Akhtar
 Final Year Student
 arslanakhtar868@gmail.com
+
+---
+
 ### 👨‍🏫 Supervisor
 
-(To be updated as per university record)
+Abdullah Qammar (https://github.com/aqdesk)
+
+---
 
 ### 🔮 Future Enhancements
 
