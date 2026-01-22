@@ -82,13 +82,13 @@ The chatbot is implemented using:
 ## 📸 Project Screenshots
 
 ### Chatbot Interface
+![Welcome Interface ](Screenshots/Welcome.png)
 ![Chatbot Interface](Screenshots/IF-1.png)
 
 
-### Admission Data Storage
-![Database](https://via.placeholder.com/600x300?text=MySQL+Database+View)
 
-*(Replace placeholder images with actual project screenshots)*
+### Admission Data Storage
+![Database](Screenshots/reg_database.png)
 
 ---
 
