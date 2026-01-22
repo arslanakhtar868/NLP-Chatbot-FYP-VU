@@ -82,7 +82,8 @@ The chatbot is implemented using:
 ## 📸 Project Screenshots
 
 ### Chatbot Interface
-![Chat Interface](https://via.placeholder.com/300x500?text=Chatbot+Interface)
+![Chatbot Interface](Screenshots/IF-1.png)
+
 
 ### Admission Data Storage
 ![Database](https://via.placeholder.com/600x300?text=MySQL+Database+View)
